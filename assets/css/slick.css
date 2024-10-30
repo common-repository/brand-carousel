@@ -1,0 +1,196 @@
+/* Slider */
+.mx-auto{
+margin: 0 auto !important;
+}
+
+.rbcs-alert{
+    text-align: center;
+    color: #bb7d13;
+}
+.slick-slider
+{
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0 0 15px 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.rbcs-left-arrow {
+    height: 30px;
+    width: 30px;
+    background-color: #ddd;
+    border-radius: 15%;
+    padding: 5px;
+    position: absolute;
+    left: -62px;
+    top: 28%;
+    cursor: pointer;
+    color: rgba(6,95,70);
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rbcs-left-arrow span, .rbcs-right-arrow span{
+    font-size: 19px;
+}
+.rbcs-right-arrow {
+    height: 30px;
+    width: 30px;
+    background-color: #ddd;
+    border-radius: 15%;
+    padding: 5px;
+    position: absolute;
+    right: -62px;
+    top: 28%;
+    cursor: pointer;
+    color: rgba(6,95,70);
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .slick-slide img
+{
+    display: block;
+    max-width: 150px;
+    max-height: 100px;
+} */
+/* the slides */
+.rbcs-no-image{
+    width: 160px;
+    background-color: #ccc;
+    height: 70px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    color: #a4830a !important;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+
+    height: auto;
+
+    border: 1px solid transparent;
+}
+
+@media screen and (min-width:1024px) and (max-width:1139px){
+    .rbcs-wrapper{
+        max-width: 700px !important;
+        width: 700px !important;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+    .rbcs-wrapper{
+        max-width: 600px !important;
+        width: 600px !important;
+    }
+}
+@media screen and (max-width:767px) {
+    .rbcs-wrapper{
+        max-width: 235px !important;
+        width: 235px !important;
+    }
+    .rbcs-left-arrow {
+        left: -14px;
+    }
+    .rbcs-right-arrow {
+        right: -14px;
+    }
+}
